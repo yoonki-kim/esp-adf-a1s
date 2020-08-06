@@ -17,7 +17,7 @@ static i2c_config_t ac_i2c_cfg = {
 /*
  * operate function of codec
  */
-audio_hal_func_t AUDIO_CODEC_AC101_CODEC_HANDLE = {
+audio_hal_func_t AUDIO_CODEC_AC101_DEFAULT_HANDLE = {
 	.audio_codec_initialize = ac101_init,
 	.audio_codec_deinitialize = ac101_deinit,
 	.audio_codec_ctrl = ac101_ctrl_state,
@@ -25,6 +25,8 @@ audio_hal_func_t AUDIO_CODEC_AC101_CODEC_HANDLE = {
 	.audio_codec_set_mute = ac101_set_voice_mute,
 	.audio_codec_set_volume = ac101_set_voice_volume,
 	.audio_codec_get_volume = ac101_get_voice_volume,
+	.audio_hal_lock = NULL,
+	.handle = NULL,
 };
 
 #define AC_ASSERT(a, format, b, ...)          \

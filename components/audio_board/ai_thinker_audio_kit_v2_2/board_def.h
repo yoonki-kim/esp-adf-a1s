@@ -63,7 +63,7 @@
 #define BUTTON_VOLUP_ID TOUCH_VOLUP
 #define BUTTON_VOLDOWN_ID TOUCH_VOLDWN
 
-extern audio_hal_func_t AUDIO_CODEC_AC101_CODEC_HANDLE;
+extern audio_hal_func_t AUDIO_CODEC_AC101_DEFAULT_HANDLE;
 
 #define AUDIO_CODEC_DEFAULT_CONFIG() {       \
     .adc_input = AUDIO_HAL_ADC_INPUT_LINE1,  \
@@ -113,5 +113,3 @@ extern audio_hal_func_t AUDIO_CODEC_AC101_CODEC_HANDLE;
 }
 
 #endif
-
-
