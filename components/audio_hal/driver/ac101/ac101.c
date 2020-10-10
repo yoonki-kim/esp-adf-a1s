@@ -292,7 +292,8 @@ esp_err_t AC101_start(ac_module_t mode)
 		//* Enable Speaker output
 		res |= ac101_write_reg(SPKOUT_CTRL, 0xeabd);
 		vTaskDelay(10 / portTICK_PERIOD_MS);
-		ac101_set_voice_volume(30);
+		// ac101_set_voice_volume(30);	// 2020-09-07; yoonki.kim
+		ac101_set_voice_volume(40);			// max 0x3f = 63
 	}
 
 	return res;

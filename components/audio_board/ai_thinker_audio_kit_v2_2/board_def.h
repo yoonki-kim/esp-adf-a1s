@@ -38,10 +38,14 @@
 #define SD_CARD_INTR_SEL GPIO_SEL_34
 #define SD_CARD_OPEN_FILE_NUM_MAX 5
 
-#define HEADPHONE_DETECT GPIO_NUM_5
-#define PA_ENABLE_GPIO GPIO_NUM_21
+// #define HEADPHONE_DETECT GPIO_NUM_5     // GPIO_NUM_39 ???_yoonki.kim_2020-08-07
+#define HEADPHONE_DETECT GPIO_NUM_39
+// #define PA_ENABLE_GPIO GPIO_NUM_21         // disable by yoonki.kim; 2020-09-08
+#define PA_ENABLE_GPIO GPIO_NUM_18            // yoonki.kim; 2020-09-08
 
-#define GREEN_LED_GPIO GPIO_NUM_22
+// #define GREEN_LED_GPIO GPIO_NUM_22         // disable by yoonki.kim; 2020-09-08
+#define GREEN_LED_GPIO GPIO_NUM_23            // yoonki.kim; 2020-09-08
+
 #define BLUE_LED_GPIO GPIO_NUM_19
 
 #define BUTTON_REC_ID GPIO_NUM_36
